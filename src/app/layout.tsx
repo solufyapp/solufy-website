@@ -3,6 +3,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
 
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
+
 export const metadata: Metadata = {
 	title: "Solufy",
 	description: "Software Development",
@@ -29,7 +32,9 @@ export default function RootLayout({
 	return (
 		<html lang="pt-BR" className="scroll-smooth">
 			<body className={`${inter.className} antialiased ${manrope.variable}`}>
+				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
