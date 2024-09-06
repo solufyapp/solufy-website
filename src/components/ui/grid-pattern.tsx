@@ -25,7 +25,7 @@ export function GridPattern({
 	strokeDasharray = 0,
 	numSquares = 50,
 	className,
-	maxOpacity = 1,
+	maxOpacity = 0.5,
 	duration = 4,
 	...props
 }: GridPatternProps) {
