@@ -12,7 +12,7 @@ export function Hero() {
 		>
 			<div className="mx-auto w-full max-w-6xl text-center">
 				<div className="flex flex-col items-center gap-6 *:z-10">
-					<h1 className="-mb-2 w-fit bg-gradient-to-b from-primary to-purple-400 bg-clip-text pb-2 font-extrabold font-manrope text-[16rem] text-transparent leading-none">
+					<h1 className="-mb-2 w-fit bg-gradient-to-b from-primary to-purple-400 bg-clip-text pb-2 font-extrabold font-manrope text-8xl text-transparent leading-none sm:text-9xl lg:text-[16rem]">
 						Solufy
 					</h1>
 
