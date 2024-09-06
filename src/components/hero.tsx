@@ -17,11 +17,9 @@ export function Hero() {
 						Solufy
 					</h1>
 
-					<p className="max-w-4xl pl-0.5 text-base/relaxed text-zinc-600">
-						Libere todo o seu potencial com nossos serviços de desenvolvimento
-						especializado. De aplicativos web personalizados a soluções de
-						sistemas escaláveis, entregamos tecnologia inovadora que impulsiona
-						seu negócio.
+					<p className="max-w-xl text-balance pl-0.5 text-sm/relaxed text-zinc-600 md:text-lg/relaxed">
+						Libere todo o potencial do seu negócio com nossos serviços de
+						desenvolvimento especializado.
 					</p>
 
 					<Link href="#features" className={buttonVariants()}>
@@ -34,6 +32,8 @@ export function Hero() {
 					numSquares={30}
 					maxOpacity={0.1}
 					duration={3}
+					width={25}
+					height={25}
 					className={cn(
 						"[mask-image:linear-gradient(transparent_25%,white,transparent_75%)]",
 						"inset-x-0 inset-y-[-50%] h-[200%] opacity-70",
