@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 		emails: ["contato@solufy.app"],
 		phoneNumbers: ["+55 (34) 99878-5110"],
 	},
+	metadataBase: new URL("https://solufy.app/"),
 };
 
 export const viewport: Viewport = {
