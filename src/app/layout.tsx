@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Manrope } from "next/font/google";
 
 import { Footer } from "@/components/footer";
@@ -8,7 +8,21 @@ import { Header } from "@/components/header";
 
 export const metadata: Metadata = {
 	title: "Solufy",
-	description: "Software Development",
+	description: "Desenvolvimento de Software",
+	category: "Software Development",
+	openGraph: {
+		type: "website",
+		title: "Solufy",
+		url: "https://solufy.app/",
+		locale: "pt_BR",
+		emails: ["contato@solufy.app"],
+		phoneNumbers: ["+55 (34) 99878-5110"],
+	},
+};
+
+export const viewport: Viewport = {
+	colorScheme: "light",
+	themeColor: "#9A35FF",
 };
 
 const inter = Inter({
