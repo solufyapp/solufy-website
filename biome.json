@@ -1,12 +1,35 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"files": {
+		"ignore": ["node_modules", ".next"]
+	},
 	"organizeImports": {
 		"enabled": true
 	},
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"correctness": {
+				"noUnusedImports": "warn",
+				"noUnusedVariables": "warn"
+			},
+			"nursery": {
+				"noUnusedFunctionParameters": "warn",
+				"useSortedClasses": {
+					"fix": "safe",
+					"level": "warn",
+					"options": { "functions": ["twMerge", "cn", "tv"] }
+				}
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true
+	},
+	"css": {
+		"formatter": {
+			"enabled": true
 		}
 	}
 }
