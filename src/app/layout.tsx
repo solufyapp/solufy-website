@@ -1,6 +1,7 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
-import "./globals.css";
 
 export const metadata: Metadata = {
 	title: "Solufy",
@@ -26,7 +27,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="pt-BR">
+		<html lang="pt-BR" className="scroll-smooth">
 			<body className={`${inter.className} antialiased ${manrope.variable}`}>
 				{children}
 			</body>
