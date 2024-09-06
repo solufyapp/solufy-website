@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,6 +13,13 @@ const inter = Inter({
 	display: "swap",
 });
 
+const manrope = Manrope({
+	subsets: ["latin"],
+	weight: ["200", "300", "400", "500", "600", "700", "800"],
+	display: "swap",
+	variable: "--font-manrope",
+});
+
 export default function RootLayout({
 	children,
 }: Readonly<{
@@ -20,7 +27,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-BR">
-			<body className={`${inter.className} antialiased`}>{children}</body>
+			<body className={`${inter.className} antialiased ${manrope.variable}`}>
+				{children}
+			</body>
 		</html>
 	);
 }

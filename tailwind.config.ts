@@ -9,6 +9,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				manrope: "var(--font-manrope)",
+			},
 			borderRadius: {
 				lg: "var(--radius)",
 				md: "calc(var(--radius) - 2px)",
@@ -54,6 +57,19 @@ const config: Config = {
 					"3": "hsl(var(--chart-3))",
 					"4": "hsl(var(--chart-4))",
 					"5": "hsl(var(--chart-5))",
+				},
+			},
+			animation: {
+				shimmer: "shimmer 8s infinite",
+			},
+			keyframes: {
+				shimmer: {
+					"0%, 90%, 100%": {
+						"background-position": "calc(-100% - var(--shimmer-width)) 0",
+					},
+					"30%, 60%": {
+						"background-position": "calc(100% + var(--shimmer-width)) 0",
+					},
 				},
 			},
 		},
