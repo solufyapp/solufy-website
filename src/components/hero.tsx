@@ -32,8 +32,6 @@ export function Hero() {
 					numSquares={30}
 					maxOpacity={0.1}
 					duration={3}
-					width={25}
-					height={25}
 					className={cn(
 						"[mask-image:linear-gradient(transparent_25%,white,transparent_75%)]",
 						"inset-x-0 inset-y-[-50%] h-[200%] opacity-70",
