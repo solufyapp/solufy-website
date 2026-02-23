@@ -9,11 +9,11 @@ export function Hero() {
 	return (
 		<section
 			id="hero"
-			className="relative bg-gradient-to-b from-transparent via-primary/10 to-transparent px-8 py-48"
+			className="relative bg-linear-to-b from-transparent via-primary/10 to-transparent px-8 py-48"
 		>
 			<div className="mx-auto w-full max-w-6xl text-center">
 				<div className="flex flex-col items-center gap-6 *:z-10">
-					<h1 className="-mb-2 w-fit bg-gradient-to-b from-primary to-purple-400 bg-clip-text pb-2 font-extrabold font-manrope text-8xl text-transparent leading-none sm:text-9xl lg:text-[16rem]">
+					<h1 className="-mb-2 w-fit bg-linear-to-b from-primary to-purple-400 bg-clip-text pb-2 font-extrabold font-manrope text-8xl text-transparent leading-none sm:text-9xl lg:text-[16rem]">
 						Solufy
 					</h1>
 
@@ -33,7 +33,7 @@ export function Hero() {
 					maxOpacity={0.1}
 					duration={3}
 					className={cn(
-						"[mask-image:linear-gradient(transparent_25%,white,transparent_75%)]",
+						"mask-[linear-gradient(transparent_25%,white,transparent_75%)]",
 						"inset-x-0 inset-y-[-50%] h-[200%] opacity-70",
 						"fill-primary/20 stroke-primary/20",
 					)}

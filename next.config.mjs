@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	output: "standalone",
-	eslint: { ignoreDuringBuilds: true },
-	devIndicators: { appIsrStatus: false },
+	devIndicators: false,
 	poweredByHeader: false,
 };
 
